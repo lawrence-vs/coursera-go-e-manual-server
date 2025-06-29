@@ -1,0 +1,111 @@
+
+# Go Binaries and Build Artifacts
+# -------------------------------
+# Binaries for the current project
+*.exe
+*.dll
+*.so
+*.dylib
+*.darwin
+*.linux
+*.windows
+*.freebsd
+*.netbsd
+*.openbsd
+*.plan9
+*.solaris
+*.android
+*.dragonfly
+*.illumos
+
+# Go test cache
+*.test
+*.out
+
+# Go module cache (usually managed by go.mod/go.sum, but compiled packages can be ignored)
+# Vendor directory (uncomment if you don't want to commit vendored dependencies)
+# vendor/
+
+# Standard Go build output directory (if you use 'go build -o bin/appname')
+/bin/
+/build/
+
+# Go generated files (e.g., from tools like stringer, protobuf, etc.)
+# If you have specific generated files, add them here.
+# For example:
+# *.pb.go
+# *.gen.go
+
+# macOS Specific Files
+# --------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+._*
+.Spotlight-V100
+.fseventsd
+.VolumeIcon.icns
+.localized
+.apdisk
+
+# IDE and Editor Specific Files
+# -----------------------------
+# VS Code
+.vscode/
+
+# IntelliJ / GoLand
+.idea/
+*.iml
+
+# Vim/Neovim swap files, backup files, and undo files
+*.swp
+*.swo
+*~
+#*#
+.netrwhist
+.undodir/ # If you configure a persistent undo directory
+
+# Other common editor/IDE temporary files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.komodoworkspace
+*.tmproj
+*.esproj
+.project
+.settings/
+.classpath
+
+# Compiled/Transpiled JavaScript/CSS (if applicable)
+# ---------------------------------------------------
+# Node.js modules (if you use npm/yarn for JS/CSS tooling)
+node_modules/
+
+# Common build output directories for web projects
+/dist/
+/out/
+/tmp/
+
+# Minified/concatenated files (if not committed)
+*.min.js
+*.min.css
+
+# Log files
+# ---------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files and archives
+# ----------------------------
+# Specific request to ignore all .zip files
+*.zip
+
+# Other common temporary or generated files
+*.bak
+*.tmp
+*.scc
+*.orig
+*.rej

@@ -24,7 +24,11 @@
     </div>
 
     <div class="content-area">
-      <!-- generate dynamic content here -->
+      {{ range $val := .}}
+      <a href="manuals/{{$val}}.html">
+        <img class="index-img" src="images/{{$val}}.jpg" alt="{{$val}}" />
+      </a>
+      {{end}}
     </div>
 
     <div class="bottom-banner">

@@ -8,7 +8,16 @@ import (
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("received request: " + r.URL.Path)
-	t, _ := template.ParseFiles("templates/index.html")
+	t, err := template.ParseFiles("templates/index.html")
+	if err != nil {
+		w.WriteHeader(http.StatusNotFound)
+		fmt.Fprintf(w, "%v Server error\n", http.StatusNotFound)
+		fmt.Fprintf(w, "Description: %s\n", err)
+		return
+	}
+	pages, _ := ScanDir("./manuals")
+	fmt.Println(pages)
+
 	t.Execute(w, nil)
 }
 
